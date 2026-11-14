@@ -18,11 +18,11 @@ Responsive, single-page site using plain HTML, CSS and JavaScript.
 
 ## Edit business details
 
-- Edit the SITE object near the bottom of index.html for both phone numbers, WhatsApp numbers, both emails and hours. WhatsApp numbers use country code without a plus sign.
-- Update the email in privacy.html and terms.html too.
+- Edit the SITE object near the bottom of index.html for both phone numbers, WhatsApp numbers, business email and hours. WhatsApp numbers use country code without a plus sign.
+- The official business email is listed in privacy.html and terms.html.
 - Replace the marked hero image URL and its alt text with your compressed car or team photo.
-- Replace review placeholders with real customer reviews only with permission.
-- Add real bank names, social profile links and your Google review URL when available.
+- Replace the illustrative customer journeys with real customer reviews only with permission.
+- Add confirmed lending partner bank names, official social profile links and your Google review URL when available.
 - The car logo and favicon are included in the page. Analytics insertion point and click tracking hooks are marked in index.html.
 - The enquiry form stores enquiries in Supabase. The current setup does not email submissions; review the Supabase table or add an email notification separately.
 
