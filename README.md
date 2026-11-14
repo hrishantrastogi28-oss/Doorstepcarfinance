@@ -1,10 +1,10 @@
-# Door Step Car Sales & Finance website
+# Doorstepcarloan website
 
 Responsive, single-page site using plain HTML, CSS and JavaScript.
 
 ## Connect the enquiry form to Supabase
 
-1. Create a Supabase project named `doorstepcarfinance` (Free plan is enough for the starter site).
+1. Create a Supabase project named `doorstepcarloan` (Free plan is enough for the starter site).
 2. In its **SQL Editor**, run `supabase-setup.sql`. This creates `public.car_loan_enquiries` with row-level security enabled. Public visitors can insert enquiries but cannot read them.
 3. In **Project Settings → API**, copy the Project URL and the publishable key. Do not use a secret or service-role key in the website.
 4. In `index.html`, set `url` and `publishableKey` in the `SUPABASE` object near the bottom of the file. These are the only website connection values to edit.
