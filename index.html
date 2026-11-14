@@ -97,9 +97,9 @@
 <script>
 // Change the phone numbers, email and hours here.
 const SITE={phone:"+916388039308",phoneAlt:"+918960246408",wa:"916388039308",waAlt:"918960246408",email:"Doorstepcarsales@gmail.com",hours:"By appointment"};
-// Add your Supabase project's URL and publishable key after creating the project.
-// The publishable key is safe for this public page only because the table uses insert-only RLS.
-const SUPABASE={url:"",publishableKey:"",table:"car_loan_enquiries"};
+// Supabase project: doorstepcarfinance. The publishable key is intended for browser use;
+// never put a secret/service-role key here. The table permits public inserts only via RLS.
+const SUPABASE={url:"https://rtabndmgmayvmmkyaydw.supabase.co",publishableKey:"sb_publishable_3MeAYlRZ1EUKmpq_E-PwRg_UCOQaD4R",table:"car_loan_enquiries"};
 const waLink=(number,message)=>"https://wa.me/"+number+"?text="+encodeURIComponent(message||"Hi Doorstepcarloan, I need a car loan.");
 document.querySelectorAll("[data-call]").forEach(a=>a.href="tel:"+(a.dataset.call==="second"?SITE.phoneAlt:SITE.phone));
 document.querySelectorAll("[data-phone]").forEach(x=>x.textContent=x.dataset.phone==="second"?"+91 89602 46408":"+91 63880 39308");

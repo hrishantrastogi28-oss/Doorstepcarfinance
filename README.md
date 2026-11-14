@@ -4,11 +4,11 @@ Responsive, single-page site using plain HTML, CSS and JavaScript.
 
 ## Connect the enquiry form to Supabase
 
-1. Create a Supabase project named `doorstepcarloan` (Free plan is enough for the starter site).
+1. The site is connected to the Supabase project named `doorstepcarfinance`.
 2. In its **SQL Editor**, run `supabase-setup.sql`. This creates `public.car_loan_enquiries` with row-level security enabled. Public visitors can insert enquiries but cannot read them.
 3. In **Project Settings → API**, copy the Project URL and the publishable key. Do not use a secret or service-role key in the website.
-4. In `index.html`, set `url` and `publishableKey` in the `SUPABASE` object near the bottom of the file. These are the only website connection values to edit.
-5. Submit a test enquiry on the published site, then check **Table Editor → car_loan_enquiries** in Supabase.
+4. The public project URL and publishable key are configured in the `SUPABASE` object near the bottom of `index.html`. Never put a secret or service-role key in the website.
+5. Form submissions are saved in **Table Editor → car_loan_enquiries** in Supabase. The table uses row-level security: public visitors can submit but cannot read enquiries.
 
 ## Publish free on Netlify
 

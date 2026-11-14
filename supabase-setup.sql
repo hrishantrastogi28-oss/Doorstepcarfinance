@@ -1,4 +1,4 @@
--- Run once in the Supabase SQL Editor for the doorstepcarloan project.
+-- Run once in the Supabase SQL Editor for the doorstepcarfinance project.
 -- Public website visitors may submit an enquiry, but cannot read or change rows.
 create table if not exists public.car_loan_enquiries (
   id uuid primary key default gen_random_uuid(),
