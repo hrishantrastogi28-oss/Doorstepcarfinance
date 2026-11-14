@@ -96,13 +96,13 @@
 <div class="mobile-cta" aria-label="Quick contact"><a class="btn green" data-call="main" data-track="call" href="#">Call Now<small>Abhi call karein</small></a><a class="btn navy" data-wa="main" data-message="Hi Doorstepcarloan, I need a car loan." data-track="whatsapp" href="#">WhatsApp Chat<small>Abhi sampark karein</small></a></div>
 <script>
 // Change the phone numbers, email and hours here.
-const SITE={phone:"+916388039308",phoneAlt:"+918960246408",wa:"916388039308",waAlt:"918960246408",email:"Doorstepcarsales@gmail.com",hours:"By appointment"};
+const SITE={phone:"+918960246408",phoneAlt:"+916388039308",wa:"916388039308",waAlt:"918960246408",email:"Doorstepcarsales@gmail.com",hours:"By appointment"};
 // Supabase project: doorstepcarfinance. The publishable key is intended for browser use;
 // never put a secret/service-role key here. The table permits public inserts only via RLS.
 const SUPABASE={url:"https://rtabndmgmayvmmkyaydw.supabase.co",publishableKey:"sb_publishable_3MeAYlRZ1EUKmpq_E-PwRg_UCOQaD4R",table:"car_loan_enquiries"};
 const waLink=(number,message)=>"https://wa.me/"+number+"?text="+encodeURIComponent(message||"Hi Doorstepcarloan, I need a car loan.");
 document.querySelectorAll("[data-call]").forEach(a=>a.href="tel:"+(a.dataset.call==="second"?SITE.phoneAlt:SITE.phone));
-document.querySelectorAll("[data-phone]").forEach(x=>x.textContent=x.dataset.phone==="second"?"+91 89602 46408":"+91 63880 39308");
+document.querySelectorAll("[data-phone]").forEach(x=>x.textContent=x.dataset.phone==="second"?"+91 63880 39308":"+91 89602 46408");
 document.querySelectorAll("[data-wa]").forEach(a=>{a.href=waLink(a.dataset.wa==="second"?SITE.waAlt:SITE.wa,a.dataset.message);a.target="_blank";a.rel="noopener"});
 document.querySelectorAll("[data-email]").forEach(a=>a.href="mailto:"+SITE.email);
 document.querySelectorAll("[data-email-text]").forEach(x=>x.textContent=SITE.email);
